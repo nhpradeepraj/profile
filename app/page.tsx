@@ -24,15 +24,6 @@ const chapters = [
     eyebrow: "WHO I AM",
     title: "Keeping technology reliable",
     subtitle: "Support • Operations • Problem Solving",
-    text: (
-      <>
-        ✦ Solving complex technical challenges
-        <br />
-        ✦ Keeping enterprise applications reliable
-        <br />
-        ✦ Supporting customers across production environments
-      </>
-    ),
   },
 
   {
@@ -41,19 +32,6 @@ const chapters = [
     eyebrow: "2008 → 2026",
     title: "A journey across technology",
     subtitle: "Development → Application Engineering → Operations → AI",
-    text: (
-      <>
-        ✦ Software Development
-        <br />
-        ✦ Application Engineering
-        <br />
-        ✦ eDiscovery & Cloud Operations
-        <br />
-        ✦ AI-Augmented Platform Operations
-        <br />
-        ✦ Generative AI & Agentic AI
-      </>
-    ),
   },
 
   {
@@ -62,19 +40,6 @@ const chapters = [
     eyebrow: "TOP CAREER ACHIEVEMENTS",
     title: "Turning problems into improvements",
     subtitle: "Performance • Reliability • Customer Experience",
-    text: (
-      <>
-        ✦ Performance Optimization
-        <br />
-        ✦ API & Transaction Processing
-        <br />
-        ✦ Memory & SQL Optimization
-        <br />
-        ✦ Cloud Efficiency & Alert Reduction
-        <br />
-        ✦ Monitoring & Operational Visibility
-      </>
-    ),
   },
 
   {
@@ -104,13 +69,13 @@ const chapters = [
     subtitle: "Cloud • Code • Observability • IT Operations",
     text: (
       <>
-        ✦ AWS • Python • SQL • REST APIs
+        ✦ Java • Python • AWS • SQL • REST APIs and more...
         <br />
-        ✦ ServiceNow • Splunk • SolarWinds
+        ✦ ServiceNow • Splunk • SolarWinds and more...
         <br />
-        ✦ PagerDuty • Icinga
+        ✦ PagerDuty • Icinga and more...
         <br />
-        ✦ SRE • ITIL • Observability
+        ✦ SRE • ITIL • Observability, and more...
       </>
     ),
   },
@@ -121,19 +86,6 @@ const chapters = [
     eyebrow: "AI JOURNEY",
     title: "Growing toward intelligent operations",
     subtitle: "AI-Assisted Monitoring • Predictive Intelligence • Generative AI • Agentic AI",
-    text: (
-      <>
-        ✦ AI-Assisted Operations
-        <br />
-        ✦ Predictive Intelligence
-        <br />
-        ✦ Generative AI
-        <br />
-        ✦ Agentic AI
-        <br />
-        ✦ Intelligent Automation
-      </>
-    ),
   },
 
   {

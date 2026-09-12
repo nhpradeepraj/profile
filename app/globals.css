@@ -2575,3 +2575,45 @@ a:hover,
     letter-spacing: 0.05em;
   }
 }
+
+/* AUTO navigation control - match SOUND button */
+.autoplay-toggle {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+.autoplay-toggle:hover {
+  opacity: 0.75;
+}
+
+.autoplay-toggle:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 4px;
+}
+
+.top-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-divider {
+  opacity: 0.35;
+  font-size: inherit;
+  user-select: none;
+}

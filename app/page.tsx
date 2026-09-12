@@ -140,6 +140,7 @@ export default function Home() {
   const [active, setActive] = useState(0);
   const [started, setStarted] = useState(false);
   const [sound, setSound] = useState(false);
+  const [autoPlay, setAutoPlay] = useState(true);
   const [transitioning, setTransitioning] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [introVideoReady, setIntroVideoReady] = useState(false);
@@ -230,14 +231,13 @@ export default function Home() {
   }, [started, active, introVideoReady]);
 
   useEffect(() => {
-    if (!started) return;
+    if (!started || !autoPlay) return;
     // The 16-second intro is controlled by the video's onEnded event.
     // This prevents the portfolio from cutting the video short.
     if (active === 0 && introVideoReady) return;
     const timer = window.setTimeout(() => { if (active < chapters.length - 1) goTo(active + 1); }, 6500);
     return () => window.clearTimeout(timer);
-  }, [active, started, introVideoReady]);
-
+  }, [active, started, introVideoReady, autoPlay]);
   useEffect(() => () => { if ("speechSynthesis" in window) window.speechSynthesis.cancel(); }, []);
 
   return (
@@ -269,8 +269,37 @@ export default function Home() {
       <div className="ambient ambient-one" /><div className="ambient ambient-two" /><div className="grid" />
 
       <header className="topbar">
-        <div className="brand brand-logo"><img src="/portfolio-logo.png" alt="The Portfolio" /><span className="brand-fallback">Hanuman Pradeepraj</span></div>
-        <button className="sound-button" onClick={toggleSound} aria-label="Toggle sound"><span className={`sound-dot ${sound ? "on" : ""}`} />{sound ? "SOUND ON" : "SOUND OFF"}</button>
+        <div className="brand brand-logo">
+          <img src="/portfolio-logo.png" alt="The Portfolio" />
+          <span className="brand-fallback">Hanuman Pradeepraj</span>
+        </div>
+
+        <div className="top-controls">
+
+          <button
+            className={`autoplay-toggle ${autoPlay ? "is-playing" : "is-paused"}`}
+            onClick={() => setAutoPlay((value) => !value)}
+            aria-label={
+              autoPlay
+                ? "Pause automatic navigation"
+                : "Resume automatic navigation"
+            }
+          >
+            {autoPlay ? "⏸ AUTO" : "▶ AUTO"}
+          </button>
+
+          <span className="control-divider">|</span>
+
+          <button
+            className="sound-button"
+            onClick={toggleSound}
+            aria-label="Toggle sound"
+          >
+            <span className={`sound-dot ${sound ? "on" : ""}`} />
+            {sound ? "SOUND ON" : "SOUND OFF"}
+          </button>
+
+        </div>
       </header>
 
       <nav className="chapter-nav" aria-label="Portfolio chapters">
@@ -397,7 +426,7 @@ export default function Home() {
       
       {!started && <div className="intro-overlay"><div className="intro-scan"/><span>INITIALIZING EXPERIENCE</span></div>}
       <footer className="footer"><span>APPLICATION SUPPORT • PLATFORM OPERATIONS</span><span>HYDERABAD • INDIA</span></footer>
-      <footer className="site-footer"> Website designed & created by Hanuman Pradeepraj </footer>
+      <footer className="site-footer"> Website designed & created by Hanuman Pradeepraj (2026)</footer>
     </main>
   );
 }

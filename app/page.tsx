@@ -397,6 +397,7 @@ export default function Home() {
       
       {!started && <div className="intro-overlay"><div className="intro-scan"/><span>INITIALIZING EXPERIENCE</span></div>}
       <footer className="footer"><span>APPLICATION SUPPORT • PLATFORM OPERATIONS</span><span>HYDERABAD • INDIA</span></footer>
+      <footer className="site-footer"> Website designed & created by Hanuman Pradeepraj </footer>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-# Pradeepraj Digital Portfolio — Final Unified Experience
+# Pradeepraj Digital Portfolio — Final Experience
 
 This version keeps the latest font-size/layout adjustments and introduces the final unified full-screen visual treatment.
 

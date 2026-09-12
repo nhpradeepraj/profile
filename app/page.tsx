@@ -318,7 +318,7 @@ export default function Home() {
           <h2>{chapters[active].subtitle}</h2>
           <p className={`description description-${active}`}>{chapters[active].text}</p>
 
-          {active === 0 && <div className="intro-actions"><button className="primary-button" onClick={startExperience}><span>ENTER EXPERIENCE</span><b>→</b></button><span className="hint">Scroll / swipe / arrow keys</span></div>}
+          {active === 0 && <div className="intro-actions"><button className="primary-button" onClick={startExperience}><span>CLICK TO EXPLORE</span><b>→</b></button><span className="hint">Scroll / Swipe </span></div>}
           {active === 1 && <div className="v11-who-flow">
             <div className="who-statement">
               <span className="who-index">01</span>

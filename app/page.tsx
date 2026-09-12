@@ -167,11 +167,18 @@ const chapters = [
       <br />
       ✦ Hyderabad • India
       <br />
-      ✦ +91 97000 78889
+      ✦ <a href="tel:+919700078889">+91 97000 78889</a>
       <br />
-      ✦ jobatpradeep@gmail.com
+      ✦ <a href="mailto:pradeep@example.com">jobatpradeep@gmail.com</a>
       <br />
-      ✦ LinkedIn • linkedin.com/in/nhpradeepraj
+      ✦{" "}
+      <a
+        href="https://www.linkedin.com/in/nhpradeepraj"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn • linkedin.com/in/pradeepraj
+      </a>
     </>
   ),
 },
@@ -441,3 +448,5 @@ export default function Home() {
     </main>
   );
 }
+
+

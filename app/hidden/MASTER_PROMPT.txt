@@ -1,0 +1,1209 @@
+MASTER PROMPT — BUILD COMPLETE PREMIUM AI PORTFOLIO WEBSITE FROM A TO Z
+
+You are an expert senior frontend engineer, UI/UX designer, motion designer, and Next.js developer.
+
+Your task is to BUILD a complete, production-ready personal portfolio website from scratch.
+
+IMPORTANT:
+Do NOT give me a tutorial.
+Do NOT give me partial code.
+Do NOT give me snippets that I need to assemble manually.
+
+You must create the COMPLETE WORKING PROJECT from A to Z.
+
+The final project must run locally with:
+
+npm install
+npm run dev
+
+and must be ready for GitHub + Cloudflare deployment.
+
+==================================================
+1. TECHNOLOGY
+==================================================
+
+Use:
+
+- Next.js
+- React
+- TypeScript
+- App Router
+- Modern CSS
+- HTML5 video/audio
+- CSS animations and transitions
+- React state/hooks where required
+
+Keep dependencies minimal.
+
+Do NOT introduce unnecessary frameworks or libraries.
+
+Do NOT require a backend unless absolutely necessary.
+
+The portfolio should work as a frontend/static-style experience wherever possible.
+
+The project must be clean and production-ready.
+
+==================================================
+2. PROJECT STRUCTURE
+==================================================
+
+Create a clean project structure:
+
+app/
+  page.tsx
+  globals.css
+  layout.tsx
+
+public/
+  profile.png
+  portfolio-logo.png
+  intro.mp4
+  audio/
+    background.mp3
+
+Include:
+
+- package.json
+- tsconfig.json
+- next.config.ts
+- postcss configuration only if actually required
+- proper .gitignore
+- README.md
+
+Do NOT include node_modules in the source project.
+
+Do NOT include .next in the source project.
+
+==================================================
+3. DESIGN CONCEPT
+==================================================
+
+Create a premium futuristic personal portfolio.
+
+The visual direction is:
+
+- Deep-space / galaxy background
+- Dark navy / black atmosphere
+- Subtle blue/cyan stars
+- Slowly moving particles
+- Small twinkling stars
+- Soft ambient glows
+- Modern futuristic typography
+- Premium glass-like UI elements
+- Subtle cyber/technology feeling
+- Elegant rather than gaming-oriented
+- Sophisticated rather than overly flashy
+
+The entire website must feel like ONE continuous digital experience.
+
+IMPORTANT:
+
+Do NOT create a conventional long scrolling website.
+
+Do NOT create separate rectangular sections stacked vertically.
+
+The experience should behave like a full-screen interactive presentation.
+
+The browser viewport should effectively act as a digital stage.
+
+==================================================
+4. FULL SCREEN EXPERIENCE
+==================================================
+
+The portfolio must occupy:
+
+100vw × 100vh
+
+The user should feel like they are moving through chapters of a digital story.
+
+When navigating between chapters:
+
+- Existing content should transition out smoothly.
+- New content should transition in smoothly.
+- Background should remain continuous.
+- Presenter should remain visually integrated.
+- Avoid hard page jumps.
+- Avoid obvious panel replacement.
+- Avoid a "PowerPoint slide" appearance.
+
+Use:
+
+- fade
+- slide
+- blur
+- opacity
+- transform
+- subtle scale
+- glow
+
+for transitions.
+
+Keep transitions fast and premium.
+
+==================================================
+5. TOP HEADER
+==================================================
+
+Top-left:
+
+Use an image logo:
+
+/portfolio-logo.png
+
+Do NOT use plain text branding if the image logo exists.
+
+Top-right:
+
+Create a sound control:
+
+SOUND ON
+SOUND OFF
+
+Use a small visual indicator.
+
+The sound control must be elegant and minimal.
+
+==================================================
+6. SOUND BEHAVIOR
+==================================================
+
+There are TWO independent audio sources:
+
+1. Intro video audio
+2. Portfolio background music
+
+They MUST NOT interfere with each other.
+
+CRITICAL AUDIO LOGIC:
+
+When the intro video is playing:
+
+- Intro video audio plays normally.
+- Background music MUST remain paused.
+
+When the intro video ends:
+
+- Background music starts automatically.
+- Portfolio continues to the next chapter.
+
+The SOUND ON/OFF button controls ONLY background music.
+
+It must NEVER mute or unmute the intro video's audio.
+
+If the visitor clicks SOUND OFF during the intro:
+
+- Intro video continues normally with its own audio.
+- Background music remains disabled.
+
+If the visitor clicks SOUND ON during the intro:
+
+- Do NOT start background music while the intro video is still playing.
+- Remember the user's preference.
+- Start background music only after the intro finishes.
+
+After the intro:
+
+SOUND ON:
+- background.mp3 plays.
+
+SOUND OFF:
+- background.mp3 pauses.
+
+The music should loop continuously.
+
+Use a low comfortable volume around:
+
+0.12–0.18
+
+Do not make the background music overpowering.
+
+==================================================
+7. INTRO EXPERIENCE
+==================================================
+
+The intro is the most important part.
+
+Initial state:
+
+- Full-screen galaxy background
+- Presenter/video visible on the right
+- Main title/content on the left
+- START EXPERIENCE button
+
+The intro video is:
+
+/intro.mp4
+
+IMPORTANT:
+
+Do NOT automatically start the intro video before the user interacts.
+
+Show:
+
+START EXPERIENCE
+
+When the user clicks START EXPERIENCE:
+
+1. Start the intro video.
+2. Keep background music paused.
+3. Allow intro video audio.
+4. Keep the visitor on the INTRO chapter.
+5. Do NOT cut the video after an arbitrary timeout.
+6. Let the video play until its natural end.
+
+When the video fires:
+
+onEnded
+
+then:
+
+1. Move to WHO I AM.
+2. Start background music if the user has sound enabled.
+3. Continue the portfolio experience.
+
+The video must not be cropped unnecessarily.
+
+Preserve the complete presenter whenever possible.
+
+Use appropriate object-fit/object-position behavior so the presenter is naturally framed.
+
+==================================================
+8. PRESENTER
+==================================================
+
+Use:
+
+/profile.png
+
+The presenter should appear primarily on the right side.
+
+However:
+
+IMPORTANT:
+
+Do NOT create a hard rectangular image box.
+
+The presenter should visually blend into the galaxy background.
+
+Use:
+
+- soft gradients
+- dark/navy feathering
+- ambient glow
+- subtle shadow
+- transparent blending
+- edge fading
+
+The presenter should feel like they are part of the environment.
+
+Do NOT make it look like:
+
+- a photograph inside a card
+- a boxed profile image
+- a floating rectangle
+
+The presenter should remain visually consistent throughout the experience.
+
+==================================================
+9. HERO CONTENT
+==================================================
+
+Hero title:
+
+Hanuman Pradeepraj
+
+Subtitle:
+
+Application Support & Platform Operations Engineer
+
+Supporting text:
+
+Production Operations • Cloud • Observability • Performance • AI-Assisted Operations
+
+Use a strong but elegant typographic hierarchy.
+
+The name should be the visual focal point.
+
+Use subtle outline typography where appropriate.
+
+Do not make the typography excessively huge.
+
+==================================================
+10. TOP NAVIGATION
+==================================================
+
+Create a top navigation below the header.
+
+Labels:
+
+INTRO
+WHO I AM
+CAREER JOURNEY
+ACHIEVEMENTS
+EXPERIENCE
+TECHNOLOGY
+AI
+EDUCATION
+CONTACT
+
+The navigation should:
+
+- show the active chapter
+- be clickable
+- transition smoothly
+- remain visually subtle
+- fit the futuristic theme
+
+If the user has not started the experience and clicks another chapter:
+
+start the experience first.
+
+==================================================
+11. NAVIGATION METHODS
+==================================================
+
+Support:
+
+- Mouse wheel
+- Arrow Up
+- Arrow Down
+- Arrow Left
+- Arrow Right
+- PageUp
+- PageDown
+- Touch swipe
+- Navigation buttons
+
+Do NOT use normal vertical page scrolling to change chapters.
+
+Navigation changes the active chapter inside the full-screen stage.
+
+Wrap-around navigation may be used if appropriate.
+
+Prevent accidental double transitions.
+
+==================================================
+12. CHAPTERS
+==================================================
+
+Use exactly these chapters.
+
+--------------------------------------------------
+01 — INTRO
+--------------------------------------------------
+
+Label:
+
+INTRO
+
+Eyebrow:
+
+APPLICATION SUPPORT • PLATFORM OPERATIONS
+
+Title:
+
+Hanuman Pradeepraj
+
+Subtitle:
+
+Application Support & Platform Operations Engineer
+
+Text:
+
+✦ Solving complex technical challenges • Customer-focused operations
+✦ Cloud • Observability • Performance • AI
+
+--------------------------------------------------
+02 — WHO I AM
+--------------------------------------------------
+
+Label:
+
+WHO I AM
+
+Eyebrow:
+
+WHO I AM
+
+Title:
+
+Keeping technology reliable
+
+Subtitle:
+
+Support • Operations • Problem Solving
+
+Content:
+
+✦ Solving complex technical challenges
+✦ Keeping enterprise applications reliable
+✦ Supporting customers across production environments
+
+--------------------------------------------------
+03 — CAREER JOURNEY
+--------------------------------------------------
+
+Label:
+
+CAREER JOURNEY
+
+Eyebrow:
+
+2008 → 2026
+
+Title:
+
+A journey across technology
+
+Subtitle:
+
+Development → Application Engineering → Operations → AI
+
+Timeline:
+
+01
+2008
+Development
+
+02
+2015
+Application Engineering
+
+03
+2016
+eDiscovery & Cloud Operations
+
+04
+2024
+AI-Augmented Operations
+
+05
+2026
+Generative AI & Agentic AI
+
+Use a connected timeline with animated nodes.
+
+--------------------------------------------------
+04 — ACHIEVEMENTS
+--------------------------------------------------
+
+Label:
+
+ACHIEVEMENTS
+
+Eyebrow:
+
+TOP CAREER ACHIEVEMENTS
+
+Title:
+
+Turning problems into improvements
+
+Subtitle:
+
+Performance • Reliability • Customer Experience
+
+Items:
+
+01
+PERFORMANCE
+Optimization & response improvement
+
+02
+APPLICATION FLOW
+API & transaction processing
+
+03
+RESOURCE CONTROL
+Memory, SQL & storage tuning
+
+04
+OPERATIONAL VISIBILITY
+Monitoring, alerts & reliability
+
+Do NOT display specific numerical metrics on the website.
+
+--------------------------------------------------
+05 — EXPERIENCE
+--------------------------------------------------
+
+Label:
+
+EXPERIENCE
+
+Eyebrow:
+
+EXPERIENCE
+
+Title:
+
+Enterprise platforms. Production responsibility.
+
+Subtitle:
+
+ServiceNow • OpenText • Pramati Technologies • Virtusa
+
+Content:
+
+✦ Application Operations & Production Support
+✦ Cloud Operations & Platform Reliability
+✦ Incident • Problem • Change Management
+✦ RCA • Monitoring • Performance Engineering
+
+--------------------------------------------------
+06 — TECHNOLOGY
+--------------------------------------------------
+
+Label:
+
+TECHNOLOGY
+
+Eyebrow:
+
+TECHNOLOGY
+
+Title:
+
+The tools behind the work
+
+Subtitle:
+
+Cloud • Code • Observability • IT Operations
+
+Content:
+
+✦ AWS • Python • SQL • REST APIs
+✦ ServiceNow • Splunk • SolarWinds
+✦ PagerDuty • Icinga
+✦ SRE • ITIL • Observability
+
+--------------------------------------------------
+07 — AI
+--------------------------------------------------
+
+Label:
+
+AI
+
+Eyebrow:
+
+AI JOURNEY
+
+Title:
+
+Growing toward intelligent operations
+
+Subtitle:
+
+AI-Assisted Monitoring • Predictive Intelligence • Generative AI • Agentic AI
+
+Content:
+
+✦ AI-Assisted Operations
+✦ Predictive Intelligence
+✦ Generative AI
+✦ Agentic AI
+✦ Intelligent Automation
+
+Create a futuristic AI flow visualization connecting these concepts.
+
+--------------------------------------------------
+08 — EDUCATION
+--------------------------------------------------
+
+Label:
+
+EDUCATION
+
+Eyebrow:
+
+EDUCATION
+
+Title:
+
+Always learning
+
+Subtitle:
+
+Data Science • Generative AI • Agentic AI • Project Management • Information Technology
+
+Timeline:
+
+01
+ILLINOIS INSTITUTE OF TECHNOLOGY
+PGP • Generative AI & Agentic AI
+
+02
+ISB
+Project Management Certificate
+
+03
+JNTU
+B.Tech • Information Technology
+
+Use a connected timeline with glowing nodes similar to Career Journey.
+
+--------------------------------------------------
+09 — CONTACT
+--------------------------------------------------
+
+Label:
+
+CONTACT
+
+Eyebrow:
+
+LET'S CONNECT
+
+Title:
+
+Let's build something reliable.
+
+Subtitle:
+
+Hanuman Pradeepraj
+
+Content:
+
+✦ Application Support & Platform Operations Engineer
+✦ Hyderabad • India
+
+Phone:
++91 98765 43210
+
+Email:
+pradeep@example.com
+
+LinkedIn:
+https://www.linkedin.com/in/pradeepraj
+
+IMPORTANT:
+
+Make all three clickable.
+
+Phone:
+
+<a href="tel:+919876543210">
+
+Email:
+
+<a href="mailto:pradeep@example.com">
+
+LinkedIn:
+
+<a
+  href="https://www.linkedin.com/in/pradeepraj"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+
+Use sample values above as placeholders.
+
+Make it easy to replace them later.
+
+==================================================
+13. CONTACT LINK DESIGN
+==================================================
+
+Contact links should have:
+
+- subtle cyan/blue color
+- no ugly default browser underline
+- subtle bottom border
+- smooth hover transition
+- soft glow on hover
+
+Example style:
+
+color: #8ed8ff;
+
+On hover:
+
+color: white;
+text-shadow: 0 0 12px rgba(...);
+
+Keep it elegant.
+
+==================================================
+14. GALAXY BACKGROUND
+==================================================
+
+Create the galaxy effect using CSS and lightweight React-generated elements.
+
+Use:
+
+- approximately 80–120 stars
+- different sizes
+- different animation delays
+- different animation speeds
+- subtle opacity changes
+- slow floating movement
+- occasional twinkle
+
+Do NOT use a heavy particle library unless absolutely necessary.
+
+The galaxy must remain performant.
+
+The stars should not distract from text.
+
+==================================================
+15. AMBIENT EFFECTS
+==================================================
+
+Add:
+
+- soft blue ambient glow
+- subtle radial gradients
+- very subtle grid
+- occasional scanline
+- futuristic corner details
+- soft light behind presenter
+
+All effects must be subtle.
+
+Avoid:
+
+- excessive neon
+- gaming UI
+- aggressive cyberpunk
+- excessive animations
+- flashing effects
+
+==================================================
+16. TYPOGRAPHY
+==================================================
+
+Use a modern clean sans-serif.
+
+Recommended:
+
+Inter or system sans-serif.
+
+Typography should have:
+
+- strong hierarchy
+- good spacing
+- readable paragraph size
+- restrained uppercase labels
+- subtle letter spacing
+
+Do not use oversized text that causes clipping.
+
+==================================================
+17. RESPONSIVE DESIGN
+==================================================
+
+Must work on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+Desktop:
+
+- content primarily left
+- presenter primarily right
+
+Mobile:
+
+- presenter should move behind or above content
+- text must remain readable
+- navigation should remain usable
+- buttons should remain accessible
+- no horizontal overflow
+
+Do NOT break the full-screen experience.
+
+==================================================
+18. ACCESSIBILITY
+==================================================
+
+Include:
+
+- meaningful alt text
+- aria-labels
+- keyboard navigation
+- visible focus states
+- readable contrast
+- reduced-motion support
+
+If:
+
+prefers-reduced-motion: reduce
+
+then substantially reduce animations.
+
+==================================================
+19. PERFORMANCE
+==================================================
+
+Optimize for:
+
+- fast initial load
+- low JavaScript overhead
+- efficient CSS animations
+- lazy loading where appropriate
+- no unnecessary libraries
+- no unnecessary API calls
+
+The intro video should use:
+
+playsInline
+preload="metadata"
+
+Do not preload large assets unnecessarily.
+
+==================================================
+20. ERROR HANDLING
+==================================================
+
+If:
+
+/intro.mp4
+
+does not exist:
+
+fallback gracefully to:
+
+/profile.png
+
+Do not show a broken video UI.
+
+If:
+
+/audio/background.mp3
+
+does not exist:
+
+the portfolio should still function normally.
+
+Do not crash the application.
+
+==================================================
+21. AUDIO AUTOPLAY RESTRICTIONS
+==================================================
+
+Respect browser autoplay policies.
+
+The START EXPERIENCE click should be treated as the user's interaction that unlocks audio/video.
+
+Do not attempt to force autoplay with sound before user interaction.
+
+==================================================
+22. TRANSITIONS
+==================================================
+
+Each chapter should have a distinct but consistent visual transition.
+
+Use:
+
+- copy-in
+- copy-out
+- presenter settle
+- subtle blur
+- opacity
+- transform
+
+Do not completely re-render the entire page unnecessarily.
+
+Background remains persistent.
+
+==================================================
+23. AUTO PROGRESSION
+==================================================
+
+After the intro video:
+
+automatically move to WHO I AM.
+
+For subsequent chapters:
+
+automatically progress after a reasonable duration.
+
+Target approximately:
+
+6–7 seconds per chapter.
+
+However:
+
+If the user manually navigates:
+
+restart the chapter timer.
+
+Do not interfere with manual navigation.
+
+==================================================
+24. SOUND BUTTON
+==================================================
+
+Display:
+
+SOUND ON
+or
+SOUND OFF
+
+The button should visually indicate state.
+
+IMPORTANT:
+
+It controls ONLY:
+
+background.mp3
+
+It must NEVER modify:
+
+introVideo.muted
+
+The intro video always controls its own audio.
+
+==================================================
+25. START EXPERIENCE BUTTON
+==================================================
+
+The intro should contain:
+
+START EXPERIENCE
+
+Use:
+
+- glowing border
+- subtle hover animation
+- play icon
+- premium appearance
+
+When clicked:
+
+- start intro video
+- stop background music
+- enter experience
+- do not skip intro
+
+==================================================
+26. VISUAL CONSISTENCY
+==================================================
+
+Use a consistent visual grammar.
+
+Primary content bullet:
+
+✦
+
+Progression:
+
+→
+
+Related items:
+
+•
+
+Do not randomly mix many different bullet styles.
+
+Use the same spacing and typography across chapters.
+
+==================================================
+27. CODE QUALITY
+==================================================
+
+Write clean TypeScript.
+
+Avoid:
+
+- any
+- unnecessary useEffect
+- duplicate event listeners
+- memory leaks
+- duplicated CSS rules
+- conflicting CSS overrides
+- unused imports
+- unused state
+- console errors
+
+Keep the code understandable.
+
+Use components if they improve maintainability.
+
+==================================================
+28. IMPORTANT CSS REQUIREMENT
+==================================================
+
+Do NOT create hundreds of conflicting CSS override blocks.
+
+Create one clean source of truth for:
+
+- presenter dimensions
+- typography
+- scene positioning
+- responsive layout
+- animations
+
+Do not repeatedly override the same class later in the stylesheet.
+
+==================================================
+29. NEXT.JS REQUIREMENTS
+==================================================
+
+Use the App Router.
+
+The active page must be:
+
+app/page.tsx
+
+The active global CSS must be:
+
+app/globals.css
+
+Do not create duplicate root-level page.tsx files.
+
+Do not create duplicate root-level globals.css files.
+
+==================================================
+30. DEPLOYMENT
+==================================================
+
+The project must be suitable for GitHub.
+
+Create a proper:
+
+.gitignore
+
+It must ignore:
+
+node_modules
+.next
+.env*
+.DS_Store
+
+Do not commit:
+
+node_modules
+.next
+
+The project should be deployable through a GitHub-connected Cloudflare deployment.
+
+==================================================
+31. README
+==================================================
+
+Create a README.md containing:
+
+1. How to install
+2. How to run locally
+3. Where to place intro.mp4
+4. Where to place background.mp3
+5. Where to replace profile.png
+6. Where to replace portfolio-logo.png
+7. How to change contact details
+8. How to build
+9. How to deploy
+10. GitHub instructions
+11. Cloudflare deployment notes
+
+Keep instructions beginner-friendly.
+
+==================================================
+32. FINAL VALIDATION
+==================================================
+
+Before considering the project complete, verify:
+
+- npm install works
+- npm run dev works
+- TypeScript compiles
+- no obvious React warnings
+- no missing imports
+- no broken paths
+- no horizontal overflow
+- no accidental page scrolling
+- video loads from /intro.mp4
+- music loads from /audio/background.mp3
+- START EXPERIENCE works
+- intro video plays
+- background music stays paused during intro
+- video audio remains independent
+- background music starts after intro
+- SOUND OFF stops background music only
+- SOUND ON resumes background music
+- chapter navigation works
+- wheel navigation works
+- keyboard navigation works
+- touch navigation works
+- contact links work
+- LinkedIn opens in a new tab
+- mobile layout works
+- production build works
+
+==================================================
+33. MOST IMPORTANT UX RULE
+==================================================
+
+The final website must NOT feel like a normal resume website.
+
+It should feel like:
+
+"A premium interactive digital portfolio experience."
+
+The visitor should feel that they are entering a story:
+
+INTRO
+↓
+WHO I AM
+↓
+CAREER JOURNEY
+↓
+ACHIEVEMENTS
+↓
+EXPERIENCE
+↓
+TECHNOLOGY
+↓
+AI
+↓
+EDUCATION
+↓
+CONTACT
+
+The experience should be sophisticated, modern, smooth, professional, and memorable.
+
+==================================================
+34. FINAL INSTRUCTION TO THE CODING AGENT
+==================================================
+
+BUILD EVERYTHING.
+
+Do not stop after creating the initial page.
+
+Do not give me only instructions.
+
+Do not ask me to manually combine multiple files.
+
+Create all required files.
+
+Create all required folders.
+
+Create all required code.
+
+Implement all interactions.
+
+Implement all animations.
+
+Implement audio/video behavior.
+
+Implement responsive behavior.
+
+Implement accessibility.
+
+Implement error handling.
+
+Implement deployment readiness.
+
+After creating the project, provide:
+
+1. Complete project structure
+2. Files created/modified
+3. How to run it
+4. Any assets I need to place in public/
+5. Any values I need to replace
+6. Final validation result
+
+The final output must be a COMPLETE WORKING NEXT.JS PORTFOLIO PROJECT.

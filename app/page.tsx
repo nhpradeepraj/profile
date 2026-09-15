@@ -112,7 +112,7 @@ const chapters = [
   label: "CONTACT",
   eyebrow: "LET'S CONNECT",
   title: "Let's build what's next",
-  subtitle: "Hanuman Pradeepraj",
+  subtitle: "Interested in my profile or have an opportunity?",
   text: (
     <>
       ✦ Senior Enterprise Technologist • AI & GenAI

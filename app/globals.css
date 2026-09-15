@@ -724,8 +724,8 @@ a:hover,
   position: absolute !important;
   top: 68px !important;
   bottom: auto !important;
-  left: 35% !important;
-  right: 35% !important;
+  left: 26% !important;
+  right: 26% !important;
   width: auto !important;
   height: 46px;
   display: flex !important;
@@ -1110,7 +1110,7 @@ a:hover,
 }
 .scene-2 .timeline-node > strong { font-size: 12px; }
 .scene-2 .timeline-node > span { font-size: 15px; }
-.scene-7 .edu-node strong { font-size: 12px; }
+.scene-7 .edu-node strong { font-size: 15px; }
 .scene-7 .edu-node small { font-size: 12px; }
 
 @media (max-width: 1200px) {

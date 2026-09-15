@@ -23,3 +23,6 @@ Browser audio policies mean sound is unlocked by the visitor's Start Experience 
 - Subtle drifting blue/cyan/violet light dots.
 - No hard presenter card, frame, label, or vertical divider.
 - Existing career/education/achievement content remains intact.
+
+
+npm run dev

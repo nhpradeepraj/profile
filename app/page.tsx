@@ -6,14 +6,14 @@ const chapters = [
   {
     number: "01",
     label: "INTRO",
-    eyebrow: "APPLICATION SUPPORT • PLATFORM OPERATIONS",
+    eyebrow: "AI • ENTERPRISE TECHNOLOGY • GENAI",
     title: "Hanuman Pradeepraj",
-    subtitle: "Application Support & Platform Operations Engineer",
+    subtitle: "Senior Enterprise Technologist | AI & GenAI",
     text: (
       <>
-        ✦ Solving complex technical challenges • Customer-focused operations
+        ✦ 17 years across enterprise technology, cloud, performance & reliability
         <br />
-        ✦ Cloud • Observability • Performance • AI
+        ✦ Generative AI • Agentic AI • Data Science • Intelligent Solutions
       </>
     ),
   },
@@ -21,42 +21,42 @@ const chapters = [
   {
     number: "02",
     label: "WHO I AM",
-    eyebrow: "WHO I AM",
-    title: "Keeping technology reliable",
-    subtitle: "Support • Operations • Problem Solving",
+    eyebrow: "SENIOR ENTERPRISE TECHNOLOGIST",
+    title: "Reliable. Intelligent.",
+    subtitle: "Enterprise Technology • Cloud • Performance • Reliability • AI",
   },
 
   {
     number: "03",
     label: "CAREER JOURNEY",
     eyebrow: "2008 → 2026",
-    title: "A journey across technology",
-    subtitle: "Development → Application Engineering → Operations → AI",
+    title: "From software Development to AI",
+    subtitle: "Development → Enterprise Applications → Cloud & Reliability → AI → GenAI",
   },
 
   {
     number: "04",
     label: "ACHIEVEMENTS",
-    eyebrow: "TOP CAREER ACHIEVEMENTS",
-    title: "Turning problems into improvements",
-    subtitle: "Performance • Reliability • Customer Experience",
+    eyebrow: "MEASURABLE IMPACT",
+    title: "Turning challenges into impact",
+    subtitle: "Performance • Reliability • Efficiency • Customer Experience",
   },
 
   {
     number: "05",
     label: "EXPERIENCE",
     eyebrow: "EXPERIENCE",
-    title: "Enterprise platforms. Production responsibility.",
-    subtitle: "ServiceNow • OpenText • Pramati Technologies • Virtusa",
+    title: "Enterprise technology in production",
+    subtitle: "ServiceNow • OpenText • Pramati  • Virtusa",
     text: (
       <>
-        ✦ Application Operations & Production Support
+        ✦ Enterprise Platforms • Cloud • Reliability
         <br />
-        ✦ Cloud Operations & Platform Reliability
+        ✦ Performance Engineering • Observability • RCA
         <br />
-        ✦ Incident • Problem • Change Management
+        ✦ Production • Incident • Problem • Change Management
         <br />
-        ✦ RCA • Monitoring • Performance Engineering
+        ✦ Customer Engineering • Cross-Functional Collaboration
       </>
     ),
   },
@@ -64,18 +64,18 @@ const chapters = [
   {
     number: "06",
     label: "TECHNOLOGY",
-    eyebrow: "TECHNOLOGY",
-    title: "The tools behind the work",
-    subtitle: "Cloud • Code • Observability • IT Operations",
+    eyebrow: "TECHNOLOGY STACK",
+    title: "Enterprise technology & AI",
+    subtitle: "AI • Cloud • Code • Performance • Observability",
     text: (
       <>
-        ✦ Java • Python • AWS • SQL • REST APIs and more...
+        ✦ Python • Java • SQL • REST APIs • Data & AI
         <br />
-        ✦ ServiceNow • Splunk • SolarWinds and more...
+        ✦ Generative AI • Agentic AI • LLM Integration
         <br />
-        ✦ PagerDuty • Icinga and more...
+        ✦ AWS • ServiceNow • Enterprise Platforms
         <br />
-        ✦ SRE • ITIL • Observability, and more...
+        ✦ Observability • Performance • SRE • ITIL
       </>
     ),
   },
@@ -84,16 +84,16 @@ const chapters = [
     number: "07",
     label: "AI",
     eyebrow: "AI JOURNEY",
-    title: "Growing toward intelligent operations",
-    subtitle: "AI-Assisted Monitoring • Predictive Intelligence • Generative AI • Agentic AI",
+    title: "Building toward intelligent solutions",
+    subtitle: "AI-Assisted Analysis • Data Science • Generative AI • Agentic AI",
   },
 
   {
     number: "08",
     label: "EDUCATION",
-    eyebrow: "EDUCATION",
-    title: "Always learning",
-    subtitle: "Data Science • Generative AI • Agentic AI • Project Management • Information Technology",
+    eyebrow: "CONTINUOUS LEARNING",
+    title: "Always Learning",
+    subtitle: "Generative AI • Agentic AI • Data Science • Project Management • IT",
     text: (
       <>
         ✦ Generative AI & Agentic AI
@@ -111,17 +111,19 @@ const chapters = [
   number: "09",
   label: "CONTACT",
   eyebrow: "LET'S CONNECT",
-  title: "Let's build something reliable.",
+  title: "Let's build what's next",
   subtitle: "Hanuman Pradeepraj",
   text: (
     <>
-      ✦ Application Support & Platform Operations Engineer
+      ✦ Senior Enterprise Technologist • AI & GenAI
+      <br />
+      ✦ Enterprise Technology • Cloud • Performance • Reliability
       <br />
       ✦ Hyderabad • India
       <br />
       ✦ <a href="tel:+919700078889">+91 97000 78889</a>
       <br />
-      ✦ <a href="mailto:pradeep@example.com">jobatpradeep@gmail.com</a>
+      ✦ <a href="mailto:jobatpradeep@gmail.com">jobatpradeep@gmail.com</a>
       <br />
       ✦{" "}
       <a
@@ -129,7 +131,7 @@ const chapters = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        LinkedIn • linkedin.com/in/pradeepraj
+        LinkedIn • linkedin.com/in/nhpradeepraj
       </a>
     </>
   ),
@@ -322,7 +324,10 @@ export default function Home() {
           {active === 1 && <div className="v11-who-flow">
             <div className="who-statement">
               <span className="who-index">01</span>
-              <p>My work sits where <strong>applications, platforms and customers</strong> meet.</p>
+              <p>
+              My work sits at the intersection of <strong>enterprise platforms, cloud,
+              performance, reliability and emerging AI</strong>.
+            </p>
             </div>
             <div className="who-track">
               {[
@@ -340,7 +345,7 @@ export default function Home() {
             <div className="who-mindset"><span>OPERATING MINDSET</span><b>UNDERSTAND</b><i>→</i><b>TROUBLESHOOT</b><i>→</i><b>IMPROVE</b></div>
           </div>}
           {active === 2 && <div className="v10-timeline">
-  {[["2008","Development"],["2015","Application Engineering"],["2016","eDiscovery & Cloud Ops"],["2024","AI-Augmented Operations"],["2026","GenAI & Agentic AI"]].map(([year,label], i) =>
+  {[["2008","Development"],["2015","Enterprise Application Engineering"],["2016","eDiscovery & Cloud Ops"],["2024","Performance & AI-Assisted Operations"],["2026","Generative AI & Agentic AI"]].map(([year,label], i) =>
     <div className={`timeline-node ${i === 4 ? "current" : ""}`} key={year}>
       <span>{year}</span><i/><strong>{label}</strong>
     </div>
@@ -348,11 +353,11 @@ export default function Home() {
 </div>}
           {active === 3 && <div className="v12-achievement-rail">
   {[
-    ["01","PERFORMANCE","Optimization & response improvement"],
-    ["02","APPLICATION FLOW","API & transaction processing"],
-    ["03","RESOURCE CONTROL","Memory, SQL & storage tuning"],
-    ["04","OPERATIONAL VISIBILITY","Monitoring, alerts & reliability"]
-  ].map(([num,title,desc], i) => (
+  ["01", "PERFORMANCE", "450+ hours of transactions optimized"],
+  ["02", "API PROCESSING", "300+ hours of processing reclaimed"],
+  ["03", "RESOURCE EFFICIENCY", "30+ GB memory reclaimed • 3 TB storage reduced"],
+  ["04", "RELIABILITY", "25% reduction in recurring cloud alerts"]
+].map(([num,title,desc], i) => (
     <div className="achievement-row" key={num} style={{"--achievement-i": i} as React.CSSProperties}>
       <span>{num}</span>
       <i />
@@ -363,15 +368,15 @@ export default function Home() {
   ))}
 </div>}
           {active === 6 && <div className="v10-ai-flow">
-  {["AI-ASSISTED OPS","PREDICTIVE INTELLIGENCE","GENERATIVE AI","AGENTIC AI"].map((x,i) =>
+  {["AI-ASSISTED ANALYSIS","DATA SCIENCE","GENERATIVE AI","AGENTIC AI"].map((x,i) =>
     <div className="ai-node" key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong>{i < 3 && <b>→</b>}</div>
   )}
 </div>}
 {active === 7 && <div className="v15-education-flow">
   {[
-    ["01","ILLINOIS INSTITUTE OF TECHNOLOGY","PGP • Generative AI & Agentic AI"],
-    ["02","ISB","Project Management Certificate"],
-    ["03","JNTU","B.Tech • Information Technology"]
+    ["01","ILLINOIS INSTITUTE OF TECHNOLOGY","PGP • Gene AI & Agentic AI - In Progress"],
+    ["02","Indian School of Business","Project Management Certificate"],
+    ["03","JNTU","B.Tech - Information Technology"]
   ].map(([num,inst,program], i) => (
     <div className="edu-node" key={num} style={{"--edu-i": i} as React.CSSProperties}>
       <div className="edu-node-head"><span>{num}</span><i /></div>
@@ -425,7 +430,7 @@ export default function Home() {
 
       
       {!started && <div className="intro-overlay"><div className="intro-scan"/><span>INITIALIZING EXPERIENCE</span></div>}
-      <footer className="footer"><span>APPLICATION SUPPORT • PLATFORM OPERATIONS</span><span>HYDERABAD • INDIA</span></footer>
+      <footer className="footer"><span>AI • ENTERPRISE TECHNOLOGY • CLOUD • RELIABILITY</span><span>HYDERABAD • INDIA</span></footer>
       <footer className="site-footer"> Website designed & created by Hanuman Pradeepraj (2026)</footer>
     </main>
   );
